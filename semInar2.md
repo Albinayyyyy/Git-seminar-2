@@ -6,17 +6,17 @@
 
 // 918 -> 1
 
-Console.Clear();
+ Console.Clear();
 
-Console.WriteLine("Задача 10 ");
+ Console.WriteLine("Задача 10 ");
 
-Console.Write("Введи трёхзначное число: ");
+ Console.Write("Введи трёхзначное число: ");
 
-int threeDigitNumber = Convert.ToInt32(Console.ReadLine());
+ int threeDigitNumber = Convert.ToInt32(Console.ReadLine());
 
-string stringNumber = Convert.ToString(threeDigitNumber);
+ string stringNumber = Convert.ToString(threeDigitNumber);
 
-Console.WriteLine("вторая цифра этого числа -> "+stringNumber[1]);
+ Console.WriteLine("вторая цифра этого числа -> "+stringNumber[1]);
 
 // Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 
