@@ -86,28 +86,28 @@ CheckingTheDayOfTheWeek(dayNumber);
  }
  void CheckingTheNumber(int myNumber, int randomNumber) {
 
-  if (myNumber > randomNumber) {
-    Console.WriteLine("Не угадал, твоё число великовато");
-  }
-  else Console.WriteLine("Не угадал, твоё число маловато");
-  }
+if (myNumber > randomNumber) {
+Console.WriteLine("Не угадал, твоё число великовато");
+}
+else Console.WriteLine("Не угадал, твоё число маловато");
+}
 
- void AttemptCounter(int maxCounter){
+void AttemptCounter(int maxCounter){
 
-  int counter = 1;
-  while (counter <= maxCounter) {
+int counter = 1;
+while (counter <= maxCounter) {
 
-    Console.Write("Попытка номер " + counter);
-    Console.Write(".   Введи число: ");
-    int myNumber = Convert.ToInt32(Console.ReadLine());
+Console.Write("Попытка номер " + counter);
+Console.Write(".   Введи число: ");
+int myNumber = Convert.ToInt32(Console.ReadLine());
 
-    if (myNumber == randomNumber){
-      Console.WriteLine("Поздравляю, ты угадал! ");
-      break;
-    }
-    else {
-      CheckingTheNumber(myNumber, randomNumber);
-      counter++;
+if (myNumber == randomNumber){
+Console.WriteLine("Поздравляю, ты угадал! ");
+break;
+}
+else {
+CheckingTheNumber(myNumber, randomNumber);
+ counter++;
     }
   }
  }
