@@ -4,9 +4,8 @@
 // 918 -> 1
 
 Console.Clear();
-Console.WriteLine("Задача 10 ");
 Console.Write("Введи трёхзначное число: ");
-int threeDigitNumber = Convert.ToInt32(Console.ReadLine());
+int threeDigitNumber = Convert.ToInt32(Console.ReadLine()!);
 string stringNumber = Convert.ToString(threeDigitNumber);
 Console.WriteLine("вторая цифра этого числа -> "+stringNumber[1]);
 
@@ -15,11 +14,11 @@ Console.WriteLine("вторая цифра этого числа -> "+stringNumb
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
-Console.WriteLine("Задача 13 ");
+
 
 Console.Clear();
 Console.Write("Введи число: ");
-int anyNumber = Convert.ToInt32(Console.ReadLine());
+int anyNumber = Convert.ToInt32(Console.ReadLine()!);
 string anyNumberText = Convert.ToString(anyNumber);
 if (anyNumberText.Length > 2){
   Console.WriteLine("третья цифра -> " + anyNumberText[2]);
@@ -39,7 +38,7 @@ Console.WriteLine("Задача 15 ");
 
 Console.Clear();
 Console.Write("Введи цифру, обозначающую день недели: ");
-int dayNumber = Convert.ToInt32(Console.ReadLine());
+int dayNumber = Convert.ToInt32(Console.ReadLine()!);
 
 void CheckingTheDayOfTheWeek (int dayNumber) {
   if (dayNumber == 6 || dayNumber == 7) {
